@@ -1,0 +1,58 @@
+Edgify SCO Demo App - Evaluation License
+
+Copyright (c) 2026 Edgify Technologies Ltd. All rights reserved.
+
+1. Grant. Subject to the terms of this License, Edgify Technologies Ltd.
+   ("Edgify") grants you a limited, non-exclusive, non-transferable,
+   non-sublicensable, revocable license to download, run, view and modify
+   this software and its documentation (the "Software") solely to:
+
+   (a) evaluate and try out Edgify products and APIs; and
+   (b) demonstrate Edgify products and APIs, including to your colleagues,
+       customers or prospects, while you are evaluating Edgify or working
+       with Edgify.
+
+   You may use the Software as a reference while developing your own
+   integration with Edgify products.
+
+2. Restrictions. You may not, without Edgify's prior written consent:
+
+   (a) use the Software, or any part of it, in production, in a live retail
+       environment with real customer transactions, or for any purpose other
+       than those listed in Section 1;
+   (b) use the Software with any product or service that competes with
+       Edgify, or to build such a product or service;
+   (c) sell, sublicense, rent, publish, redistribute or otherwise make the
+       Software, or modified versions of it, available to third parties,
+       except to people within your organization who are evaluating or
+       demonstrating Edgify with you;
+   (d) remove or alter any copyright, license or attribution notice in the
+       Software.
+
+3. Trademarks. This License does not grant any right to use the Edgify name,
+   logos or trademarks, except to identify the Software as provided by Edgify.
+
+4. Edgify products and services. This License covers the Software only.
+   Access to the Edgify Agent, Edgify APIs and API tokens is governed by your
+   separate agreement with Edgify.
+
+5. Third-party components. Parts of the Software are subject to their own
+   licenses, listed in THIRD_PARTY_NOTICES.md. Those licenses govern those
+   parts.
+
+6. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+   KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+   THE SOFTWARE IS A REFERENCE DEMO AND IS NOT DESIGNED OR TESTED FOR
+   PRODUCTION USE.
+
+7. Limitation of liability. IN NO EVENT SHALL EDGIFY BE LIABLE FOR ANY
+   CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+   OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+   THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+8. Termination. This License ends automatically if you breach it, and Edgify
+   may end it at any time by notice to you. On termination you must stop
+   using the Software and delete all copies.
+
+For any use not covered by this License, contact Edgify at https://edgify.ai.

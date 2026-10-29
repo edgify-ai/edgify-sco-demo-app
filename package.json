@@ -1,0 +1,71 @@
+{
+  "name": "electron-react-sco",
+  "version": "1.0.21",
+  "private": true,
+  "description": "Edgify SCO Demo App: reference self-checkout app showing how to integrate with the Edgify Agent",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "main.js",
+  "homepage": "./",
+  "dependencies": {
+    "@zxing/library": "^0.21.0",
+    "axios": "^1.7.2",
+    "better-sqlite3": "^11.0.0",
+    "cors": "^2.8.5",
+    "electron-log": "^5.4.3",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "lucide-react": "^0.379.0",
+    "md5": "^2.3.0",
+    "mqtt": "^5.15.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0",
+    "react-scripts": "5.0.1",
+    "react-webcam": "^7.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "wait-on": "^7.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "dev": "concurrently \"cross-env HTTPS=true BROWSER=none npx react-scripts start\" \"wait-on https://localhost:3001 --no-check-cert && cross-env ELECTRON_START_URL=https://localhost:3001 electron .\"",
+    "postinstall": "electron-builder install-app-deps",
+    "package": "npm run build && electron-builder"
+  },
+  "build": {
+    "appId": "com.edgify.sco",
+    "productName": "Edgify Self Checkout",
+    "files": [
+      "build/**/*",
+      "main.js",
+      "preload.js",
+      "backend/**/*",
+      "webhook-server.js",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    },
+    "extraMetadata": {
+      "main": "main.js"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
