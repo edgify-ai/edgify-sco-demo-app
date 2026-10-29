@@ -104,7 +104,7 @@ If `npm install` fails while building `better-sqlite3`, check your Node version 
 2. Under **Prediction Agent**: enable it, set host, port and paste your API token. Repeat for **Session Agent** if you use one.
 3. Choose a scanner type: Hand Scanner (Keyboard), Webcam Scanner, Zebra Scanner (JPOS) or None.
 4. Optional: enable MQTT and set broker host, port, TLS, credentials, topics, store code.
-5. Optional: load the neutral sample catalog with **Import Data** and pick `assets/sample-data.json`.
+5. Optional: load a product catalog with **Import Data**. Pick `assets/demo-catalog.json` for the full demo catalog (56 products with images), or `assets/sample-data.json` for a minimal one (18 products, no images). Importing replaces the products and categories already in the app.
 
    Weighted produce items use IDs such as `apple` and `banana`. A prediction maps to a product when the label Edgify returns equals the product ID, so align these IDs with the labels in your Edgify model. Packaged items use made-up barcodes with the in-store `20` prefix; edit them to match the products you scan.
 
@@ -132,7 +132,8 @@ backend/
   database/db.js        SQLite schema, defaults and migrations
   lib/digest-fetch.js   HTTP Digest auth (adapted from digest-fetch, MIT)
 src/                    React UI (Welcome, Checkout, Payment, ThankYou, Settings)
-assets/sample-data.json Neutral sample catalog for Import Data
+assets/demo-catalog.json Full demo catalog for Import Data
+assets/sample-data.json Minimal catalog for Import Data
 ```
 
 ---

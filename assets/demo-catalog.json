@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "config": [
+    {
+      "key": "scanner_model",
+      "value": "keyboard_wedge"
+    },
+    {
+      "key": "keyboard_scanner_timeout",
+      "value": "100"
+    },
+    {
+      "key": "edgify_prediction_enabled",
+      "value": "true"
+    },
+    {
+      "key": "edgify_prediction_host",
+      "value": "localhost"
+    },
+    {
+      "key": "edgify_prediction_port",
+      "value": "8090"
+    },
+    {
+      "key": "edgify_prediction_ping_interval",
+      "value": "5500"
+    },
+    {
+      "key": "edgify_session_enabled",
+      "value": "true"
+    },
+    {
+      "key": "edgify_session_host",
+      "value": "localhost"
+    },
+    {
+      "key": "edgify_session_port",
+      "value": "8090"
+    },
+    {
+      "key": "zebra_adaptor_enabled",
+      "value": "false"
+    },
+    {
+      "key": "edgify_cart_loss_enabled",
+      "value": "true"
+    },
+    {
+      "key": "edgify_show_agent_vision",
+      "value": "true"
+    },
+    {
+      "key": "jpos_backend_url",
+      "value": "http://localhost:8081"
+    },
+    {
+      "key": "jpos_device_name",
+      "value": "ZebraScannerUSB"
+    },
+    {
+      "key": "jpos_scale_name",
+      "value": "ZebraScale"
+    },
+    {
+      "key": "min_weight_threshold",
+      "value": "0.09"
+    },
+    {
+      "key": "table_rows_to_display",
+      "value": "4"
+    },
+    {
+      "key": "scale_enabled",
+      "value": "true"
+    },
+    {
+      "key": "edgify_enabled",
+      "value": "true"
+    },
+    {
+      "key": "edgify_host",
+      "value": "localhost"
+    },
+    {
+      "key": "edgify_port",
+      "value": "8090"
+    },
+    {
+      "key": "edgify_ping_interval",
+      "value": "10000"
+    },
+    {
+      "key": "webhook_predictions_enabled",
+      "value": "false"
+    },
+    {
+      "key": "rfid_enabled",
+      "value": "false"
+    },
+    {
+      "key": "rfid_host",
+      "value": "localhost"
+    },
+    {
+      "key": "rfid_port",
+      "value": "8080"
+    },
+    {
+      "key": "rfid_tx_power",
+      "value": "1800"
+    },
+    {
+      "key": "rfid_antennas",
+      "value": "1,6"
+    },
+    {
+      "key": "app_title_bar_visible",
+      "value": "true"
+    },
+    {
+      "key": "mqtt_enabled",
+      "value": "false"
+    },
+    {
+      "key": "mqtt_host",
+      "value": "127.0.0.1"
+    },
+    {
+      "key": "mqtt_port",
+      "value": "1883"
+    },
+    {
+      "key": "mqtt_tls",
+      "value": "false"
+    },
+    {
+      "key": "mqtt_client_id_prefix",
+      "value": "sco-terminal"
+    },
+    {
+      "key": "mqtt_publish_topic",
+      "value": "edgifyIn"
+    },
+    {
+      "key": "mqtt_subscribe_topic",
+      "value": "edgifyOut"
+    },
+    {
+      "key": "store_code",
+      "value": ""
+    },
+    {
+      "key": "source_system",
+      "value": "SCO"
+    }
+  ],
+  "products": [
+    {
+      "id": "zucchini-pred",
+      "name": "Zucchini",
+      "image_url": "https://prod-websitecrm-assets-mumbai.s3.ap-south-1.amazonaws.com/Zucchini%20online.jpeg",
+      "price": 5.6,
+      "is_weight_based": 1,
+      "category_id": 2,
+      "enabled": 0,
+      "product_type": "weight"
+    },
+    {
+      "id": "cucumber-pred",
+      "name": "Cucumber",
+      "image_url": "https://africanmarketdubai.com/wp-content/uploads/2021/12/93341fe2-a751-4616-beb0-45b6d013b860.jpg",
+      "price": 2,
+      "is_weight_based": 1,
+      "category_id": 2,
+      "enabled": 0,
+      "product_type": "weight"
+    },
+    {
+      "id": "pepper-pred",
+      "name": "Green Bell Pepper",
+      "image_url": "https://d2lnr5mha7bycj.cloudfront.net/product-image/file/large_af53295b-32ab-4b7f-919e-4fd184627f55.png",
+      "price": 3.5,
+      "is_weight_based": 1,
+      "category_id": 2,
+      "enabled": 0,
+      "product_type": "weight"
+    },
+    {
+      "id": "009800895250",
+      "name": "Nuttela",
+      "image_url": "https://m.media-amazon.com/images/I/41OueF47ubL.jpg",
+      "price": 14.99,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 0,
+      "product_type": "quantity"
+    },
+    {
+      "id": "02266707",
+      "name": "Juicy Fruit",
+      "image_url": "https://nyx.in.ua/image/cache/catalog/00_products/06_cosmetics_and_accessories/wrigley/juicy-fruit-gum-15-1-860x860.jpg?2025",
+      "price": 2.59,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "2928",
+      "name": "Banana",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROKxExANXjN0V5ut1XTbKGpH-xM-Ioob2NDOsUu_RRPZlArw2rg_6nzoEE6wpgYIkDl4&usqp=CAU",
+      "price": 0.23,
+      "is_weight_based": 1,
+      "category_id": 1,
+      "enabled": 0,
+      "product_type": "weight"
+    },
+    {
+      "id": "049000018011",
+      "name": "Cherry Coke",
+      "image_url": "https://mobileimages.lowes.com/productimages/82f76647-8c57-4a88-95ce-1b67063b2c65/61166178.jpg?size=pdhism",
+      "price": 2.5,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "8888",
+      "name": "Buns",
+      "image_url": "https://img.freepik.com/premium-photo/burger-bread-isolated-white-background_188078-13637.jpg",
+      "price": 0.85,
+      "is_weight_based": 0,
+      "category_id": 3,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "7290000480107",
+      "name": "Quaker",
+      "image_url": "https://primary.jwwb.nl/public/r/u/n/temp-jxhyfspbewanuvhxzbgz/loffny/quackerwhiteoats.jpg",
+      "price": 4.5,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "127200005199",
+      "name": "Book",
+      "image_url": "https://media.istockphoto.com/id/173015527/photo/a-single-red-book-on-a-white-surface.jpg?s=612x612&w=0&k=20&c=AeKmdZvg2_bRY2Yct7odWhZXav8CgDtLMc_5_pjSItY=",
+      "price": 8,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "80176800",
+      "name": "Nutela Israel",
+      "image_url": "https://m.media-amazon.com/images/I/41OueF47ubL.jpg",
+      "price": 5.55,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "016000275263",
+      "name": "Cheerios",
+      "image_url": "https://target.scene7.com/is/image/Target/GUEST_a563ec23-346d-4fec-b980-ef96ef5320c1?wid=1200&hei=1200&qlt=80&fmt=webp",
+      "price": 2.45,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "6970634403710",
+      "name": "Slime Glow",
+      "image_url": "https://ak-asset.jarir.com/akeneo-prod/asset/2/b/b/5/2bb59095f8dde4e244e27b265d7f4a3181a42cac_629116.jpg",
+      "price": 5.5,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "Banana",
+      "name": "Banana",
+      "image_url": "",
+      "price": 0,
+      "is_weight_based": 0,
+      "category_id": 1,
+      "enabled": 0,
+      "product_type": "quantity"
+    },
+    {
+      "id": "Red Apple",
+      "name": "Red Apple",
+      "image_url": "",
+      "price": 0,
+      "is_weight_based": 0,
+      "category_id": 1,
+      "enabled": 0,
+      "product_type": "quantity"
+    },
+    {
+      "id": "Green Apple",
+      "name": "Green Apple",
+      "image_url": "",
+      "price": 0,
+      "is_weight_based": 0,
+      "category_id": 1,
+      "enabled": 0,
+      "product_type": "quantity"
+    },
+    {
+      "id": "Orange",
+      "name": "Orange",
+      "image_url": "",
+      "price": 0,
+      "is_weight_based": 0,
+      "category_id": 1,
+      "enabled": 0,
+      "product_type": "quantity"
+    },
+    {
+      "id": "4011",
+      "name": "Banana 4011",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROKxExANXjN0V5ut1XTbKGpH-xM-Ioob2NDOsUu_RRPZlArw2rg_6nzoEE6wpgYIkDl4&usqp=CAU",
+      "price": 0.05,
+      "is_weight_based": 1,
+      "category_id": 1,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "06827465",
+      "name": "Pure Water",
+      "image_url": "https://seattlemanilaorientalstore.com/wp-content/uploads/2023/06/img_1561-scaled.jpeg",
+      "price": 2.5,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "041220171019",
+      "name": "Bravo Detergent",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/001911984-1",
+      "price": 15.25,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "041789002120",
+      "name": "Ramen Soup",
+      "image_url": "https://cdn.shopify.com/s/files/1/0588/2701/4293/files/JC185456_1404f8b8-53b5-473e-bfac-735d04b994d5.jpg?v=1729224374",
+      "price": 2,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "4693",
+      "name": "Jalapeno 4693",
+      "image_url": "https://cdn.qvm.com.au/wp-content/uploads/2021/07/jalapeno-1-1.jpg",
+      "price": 0.23,
+      "is_weight_based": 1,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "4667",
+      "name": "Zucchini 4667",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNZ2hJYtaYVZYq1AdkzdUAK3kPZ8hUjFkz7A&s",
+      "price": 0.27,
+      "is_weight_based": 1,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "4033",
+      "name": "Small Lemons 4033",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/prd-xlarge/000375185.jpg",
+      "price": 0.55,
+      "is_weight_based": 1,
+      "category_id": 1,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "786162200433",
+      "name": "Smart Water",
+      "image_url": "https://images.thdstatic.com/productImages/700be09f-1648-4a50-a7e2-a492e04ec528/svn/glaceau-water-786162200433-64_1000.jpg",
+      "price": 3,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "4900",
+      "name": "Parsley 4900",
+      "image_url": "https://cbx-prod.b-cdn.net/COLOURBOX4900953.jpg?width=800&height=800&quality=70",
+      "price": 0.25,
+      "is_weight_based": 0,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "4899",
+      "name": "Cilantro",
+      "image_url": "https://www.teddybearfresh.com/wp-content/uploads/2021/02/cilantro-600x800.jpg",
+      "price": 0,
+      "is_weight_based": 0,
+      "category_id": 1,
+      "enabled": 0,
+      "product_type": "quantity"
+    },
+    {
+      "id": "4053",
+      "name": "Large Lemons 4053",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/000375184-1?jpegSize=150&hei=1400&fit=constrain&qlt=75&v=1",
+      "price": 0.33,
+      "is_weight_based": 0,
+      "category_id": 1,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "4131",
+      "name": "Fuji Apples 4131",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/000325191-1?jpegSize=150&hei=1400&fit=constrain&qlt=75&v=1",
+      "price": 0.56,
+      "is_weight_based": 1,
+      "category_id": 1,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "4816",
+      "name": "Sweet Potato 4816",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/000318978-1?jpegSize=150&hei=1400&fit=constrain&qlt=75&v=1",
+      "price": 0.66,
+      "is_weight_based": 1,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "4087",
+      "name": "Roma Tomato 4087",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/000318578-1?jpegSize=150&hei=1400&fit=constrain&qlt=75&v=1",
+      "price": 0.34,
+      "is_weight_based": 1,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "4663",
+      "name": "White Onion 4663",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/001180528-1?jpegSize=150&hei=1400&fit=constrain&qlt=75&v=1",
+      "price": 0.86,
+      "is_weight_based": 0,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "94011",
+      "name": "Organic Banana 94011",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/000320228-1?jpegSize=150&hei=1400&fit=constrain&qlt=75&v=1",
+      "price": 1.87,
+      "is_weight_based": 1,
+      "category_id": 1,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "4062",
+      "name": "Cucumber 4062",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/000319432-1?jpegSize=150&hei=1400&fit=constrain&qlt=75&v=1",
+      "price": 0.62,
+      "is_weight_based": 0,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "4709",
+      "name": "Serrano 4709",
+      "image_url": "https://images.heb.com/is/image/HEBGrocery/000374707-1?jpegSize=150&hei=1400&fit=constrain&qlt=75&v=1",
+      "price": 0.08,
+      "is_weight_based": 0,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "4889",
+      "name": "Cilantro 4889",
+      "image_url": "https://www.teddybearfresh.com/wp-content/uploads/2021/02/cilantro-600x800.jpg",
+      "price": 1.33,
+      "is_weight_based": 0,
+      "category_id": 2,
+      "enabled": 1,
+      "product_type": "quantity"
+    },
+    {
+      "id": "X002MQ0ZYH",
+      "name": "tryout item",
+      "image_url": "",
+      "price": 5,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "037000828433",
+      "name": "Pampers Swaddlers",
+      "image_url": "https://cdnimg.webstaurantstore.com/images/products/large/810388/2793354.jpg",
+      "price": 9.97,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "038000223006",
+      "name": "Pop Tarts Frosted Strawberry",
+      "image_url": "https://i5.walmartimages.com/asr/a2d6c875-4dd3-4bd7-a101-74031042a7fe.f545e983c704682b9c4c5e2750377d31.jpeg",
+      "price": 4.97,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "041192100253",
+      "name": "Kellogs Pops",
+      "image_url": "https://i5.walmartimages.com/asr/df94f1e1-c096-49d6-8f10-c3c88fe2b195.3db5a7a18991e8942bd270e9e777fa72.jpeg",
+      "price": 4.68,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "040000424314",
+      "name": "Snickers",
+      "image_url": "https://target.scene7.com/is/image/Target/GUEST_996f65d9-07eb-42a2-9a23-b38d29e11251?wid=300&hei=300&fmt=pjpeg",
+      "price": 1.57,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "049000024685",
+      "name": "Coca Cola 0.5L",
+      "image_url": "https://landauskj.com/api/content/images/thumbs/0202066_coca-cola-soda-500ml-pl-bottle.jpeg",
+      "price": 1.5,
+      "is_weight_based": 1,
+      "category_id": 1,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "80177173",
+      "name": "Nutella Small",
+      "image_url": "https://m.media-amazon.com/images/I/41OueF47ubL.jpg",
+      "price": 5.51,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "9120072083730",
+      "name": "Nuki",
+      "image_url": "",
+      "price": 25,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "064100130920",
+      "name": "Pop-Tarts Frosted",
+      "image_url": "https://shop.pharmasave.com/images/thumbs/0063154_00064100130920_a_c_1_.jpeg",
+      "price": 5.67,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "99999",
+      "name": "Other Item",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRULF5oES8HzmAxngw9obFFJ6txF4ZSAkQDHg&s",
+      "price": 0,
+      "is_weight_based": 1,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "weight"
+    },
+    {
+      "id": "8076808060654",
+      "name": "Barilla Farfalle No 65",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfBo1vtaON5SjfohH0GQtIaFYHR76f0W3yw&s",
+      "price": 7.81,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "54492790",
+      "name": "Cherry Coke France",
+      "image_url": "https://mobileimages.lowes.com/productimages/82f76647-8c57-4a88-95ce-1b67063b2c65/61166178.jpg?size=pdhism",
+      "price": 2.5,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "8076809512268",
+      "name": "Barilla Girandole 34",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfBo1vtaON5SjfohH0GQtIaFYHR76f0W3yw&s",
+      "price": 4.5,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "59032823",
+      "name": "Nutella France",
+      "image_url": "https://m.media-amazon.com/images/I/41OueF47ubL.jpg",
+      "price": 5.6,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "7290018359556",
+      "name": "Corn Can",
+      "image_url": "",
+      "price": 2.1,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "037600309424",
+      "name": "Skippy Peanubutter Israel",
+      "image_url": "https://yastatic.net/avatars/get-grocery-goods/2805921/2db4c3cf-34e1-4007-b5a3-57dedeb031ce/464x464-origin",
+      "price": 4.59,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "5900951311505",
+      "name": "Snickers IL",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwiITvx25JWgf229yyiKNOGs9xYkcagOVggA&s",
+      "price": 1.2,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "8076802085981",
+      "name": "Barilla Fusilli",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3KN4_vE8XRpX66HZoYEYTNxVeVwEv-T9Z3w&s",
+      "price": 5,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "3014260287030",
+      "name": "Gillete 2",
+      "image_url": "https://m.media-amazon.com/images/I/61XMlH8+wpL.jpg",
+      "price": 12.5,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    },
+    {
+      "id": "7290118209492",
+      "name": "Wellness Gum",
+      "image_url": "https://superpharmstorage.blob.core.windows.net/hybris/products/desktop/medium/7290118209492.jpg",
+      "price": 1,
+      "is_weight_based": 0,
+      "category_id": 4,
+      "enabled": 1,
+      "product_type": "single"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Fruits"
+    },
+    {
+      "id": 2,
+      "name": "Vegetables"
+    },
+    {
+      "id": 3,
+      "name": "Bakery"
+    },
+    {
+      "id": 4,
+      "name": "General"
+    }
+  ]
+}
