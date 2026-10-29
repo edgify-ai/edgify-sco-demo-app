@@ -79,19 +79,22 @@ Never commit your token. See [Security notes](#security-notes).
 ### Prerequisites
 
 - Windows 10/11 (the packaged build targets Windows; development also works on macOS and Linux)
-- Node.js 18 or later and npm
+- **Node.js 22 LTS** and npm. This is the tested version. Much newer versions (for example Node 26) have no prebuilt binary for the `better-sqlite3` database module, so `npm install` tries to compile it and usually fails. A `.nvmrc` file pins the version for [nvm](https://github.com/nvm-sh/nvm) / [nvm-windows](https://github.com/coreybutler/nvm-windows) users.
+- A folder path **without spaces**, for example `C:\Projects\edgify-sco-demo-app`. A space in the path (such as `C:\POS Demo\...`) breaks the native module build on Windows.
 - An Edgify Agent reachable from this machine, and an API token
 - Optional: a webcam, a USB barcode scanner (keyboard wedge), a Zebra scanner/scale with the jPOS bridge, an MQTT broker, an RFID reader
 
 ### Install and run
 
 ```bash
-git clone <this-repo-url>
-cd edgify-sco-app
+git clone https://github.com/edgify-ai/edgify-sco-demo-app.git
+cd edgify-sco-demo-app
 cp .env.example .env
 npm install
 npm run dev
 ```
+
+If `npm install` fails while building `better-sqlite3`, check your Node version (`node -v`) and the folder path first, then delete `node_modules` and run `npm install` again.
 
 `npm run dev` starts the React dev server on https://localhost:3001 and opens the Electron window.
 
